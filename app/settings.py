@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     chroma_persist_dir: str = "./chroma_db"
 
     google_api_key: str = ""
-    adk_model: str = "gemini-2.0-flash"
+    adk_model: str = "gemini-3-flash-preview"
 
     llm_timeout_seconds: int = 30
     tool_timeout_seconds: int = 10

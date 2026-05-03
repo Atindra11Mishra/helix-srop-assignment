@@ -16,10 +16,15 @@ Set a valid Gemini key in `.env`:
 
 ```env
 GOOGLE_API_KEY=your-google-api-key
-ADK_MODEL=gemini-2.0-flash
+ADK_MODEL=gemini-3-flash-preview
 DATABASE_URL=sqlite+aiosqlite:///./helix_srop.db
 CHROMA_PERSIST_DIR=./chroma_db
 ```
+
+`ADK_MODEL` should be a Gemini API model ID. The default uses the current
+Gemini 3 Flash preview model for fast agent routing. If your API project has
+access to other current models, you can also use `gemini-3-pro-preview` for
+stronger reasoning or `gemini-3.1-flash-lite-preview` for lower-cost runs.
 
 Ingest the bundled docs into Chroma:
 
